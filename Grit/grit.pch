@@ -1,0 +1,16 @@
+//
+//  grit.pch
+//  Grit
+//
+//  Created by BoWang on 2017/1/9.
+//  Copyright © 2017年 BoWang. All rights reserved.
+//
+
+#ifndef grit_pch
+#define grit_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#import "Macros.h"
+#import "FastMethod.h"
+#endif /* grit_pch */

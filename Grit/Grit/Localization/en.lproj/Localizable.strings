@@ -1,0 +1,14 @@
+/* 
+  Localizable.strings
+  Grit
+
+  Created by BoWang on 2017/1/27.
+  Copyright © 2017年 BoWang. All rights reserved.
+*/
+
+//NavigationBar
+"home" = "Habist"
+
+//TabBar
+"item1" = "Nonlinear";
+"item2" = "Linear";
