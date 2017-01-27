@@ -7,7 +7,7 @@
 */
 
 //NavigationBar
-"home" = "Habist"
+"home" = "Habist";
 
 //Tabbar
 "item1" = "非线性";

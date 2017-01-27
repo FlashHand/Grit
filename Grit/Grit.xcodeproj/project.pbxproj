@@ -26,6 +26,13 @@
 		FEC27BD81E3AFA7C00E4A9DC /* FastMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = FEC27BD71E3AFA7C00E4A9DC /* FastMethod.m */; };
 		FEC27BDB1E3AFDC500E4A9DC /* NonlinearViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEC27BDA1E3AFDC500E4A9DC /* NonlinearViewController.m */; };
 		FEC27BDE1E3AFDD100E4A9DC /* LinearViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEC27BDD1E3AFDD100E4A9DC /* LinearViewController.m */; };
+		FEC27BF31E3B005700E4A9DC /* CellBuff.m in Sources */ = {isa = PBXBuildFile; fileRef = FEC27BE31E3B005700E4A9DC /* CellBuff.m */; };
+		FEC27BF41E3B005700E4A9DC /* ColorBuff.m in Sources */ = {isa = PBXBuildFile; fileRef = FEC27BE61E3B005700E4A9DC /* ColorBuff.m */; };
+		FEC27BF51E3B005700E4A9DC /* CryptoBuff.m in Sources */ = {isa = PBXBuildFile; fileRef = FEC27BE91E3B005700E4A9DC /* CryptoBuff.m */; };
+		FEC27BF61E3B005700E4A9DC /* FrameBuff.m in Sources */ = {isa = PBXBuildFile; fileRef = FEC27BEC1E3B005700E4A9DC /* FrameBuff.m */; };
+		FEC27BF71E3B005700E4A9DC /* LBSBuff.m in Sources */ = {isa = PBXBuildFile; fileRef = FEC27BEF1E3B005700E4A9DC /* LBSBuff.m */; };
+		FEC27BF81E3B005700E4A9DC /* NullBuff.m in Sources */ = {isa = PBXBuildFile; fileRef = FEC27BF21E3B005700E4A9DC /* NullBuff.m */; };
+		FEC27BFC1E3B01BE00E4A9DC /* FontBuff.m in Sources */ = {isa = PBXBuildFile; fileRef = FEC27BFB1E3B01BE00E4A9DC /* FontBuff.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +88,21 @@
 		FEC27BDA1E3AFDC500E4A9DC /* NonlinearViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NonlinearViewController.m; sourceTree = "<group>"; };
 		FEC27BDC1E3AFDD100E4A9DC /* LinearViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinearViewController.h; sourceTree = "<group>"; };
 		FEC27BDD1E3AFDD100E4A9DC /* LinearViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinearViewController.m; sourceTree = "<group>"; };
+		FEC27BE01E3B005700E4A9DC /* BuffKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuffKit.h; sourceTree = "<group>"; };
+		FEC27BE21E3B005700E4A9DC /* CellBuff.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellBuff.h; sourceTree = "<group>"; };
+		FEC27BE31E3B005700E4A9DC /* CellBuff.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellBuff.m; sourceTree = "<group>"; };
+		FEC27BE51E3B005700E4A9DC /* ColorBuff.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorBuff.h; sourceTree = "<group>"; };
+		FEC27BE61E3B005700E4A9DC /* ColorBuff.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorBuff.m; sourceTree = "<group>"; };
+		FEC27BE81E3B005700E4A9DC /* CryptoBuff.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CryptoBuff.h; sourceTree = "<group>"; };
+		FEC27BE91E3B005700E4A9DC /* CryptoBuff.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CryptoBuff.m; sourceTree = "<group>"; };
+		FEC27BEB1E3B005700E4A9DC /* FrameBuff.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FrameBuff.h; sourceTree = "<group>"; };
+		FEC27BEC1E3B005700E4A9DC /* FrameBuff.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FrameBuff.m; sourceTree = "<group>"; };
+		FEC27BEE1E3B005700E4A9DC /* LBSBuff.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBSBuff.h; sourceTree = "<group>"; };
+		FEC27BEF1E3B005700E4A9DC /* LBSBuff.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBSBuff.m; sourceTree = "<group>"; };
+		FEC27BF11E3B005700E4A9DC /* NullBuff.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NullBuff.h; sourceTree = "<group>"; };
+		FEC27BF21E3B005700E4A9DC /* NullBuff.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NullBuff.m; sourceTree = "<group>"; };
+		FEC27BFA1E3B01BE00E4A9DC /* FontBuff.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FontBuff.h; sourceTree = "<group>"; };
+		FEC27BFB1E3B01BE00E4A9DC /* FontBuff.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FontBuff.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -271,6 +293,7 @@
 		FE35F39E1E22E7E4009ED4DF /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				FEC27BDF1E3B005700E4A9DC /* BuffKit */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -307,6 +330,84 @@
 				FEC27BD71E3AFA7C00E4A9DC /* FastMethod.m */,
 			);
 			path = Func;
+			sourceTree = "<group>";
+		};
+		FEC27BDF1E3B005700E4A9DC /* BuffKit */ = {
+			isa = PBXGroup;
+			children = (
+				FEC27BE01E3B005700E4A9DC /* BuffKit.h */,
+				FEC27BE11E3B005700E4A9DC /* CellBuff */,
+				FEC27BE41E3B005700E4A9DC /* ColorBuff */,
+				FEC27BE71E3B005700E4A9DC /* CryptoBuff */,
+				FEC27BEA1E3B005700E4A9DC /* FrameBuff */,
+				FEC27BED1E3B005700E4A9DC /* LBSBuff */,
+				FEC27BF91E3B01A400E4A9DC /* FontBuff */,
+				FEC27BF01E3B005700E4A9DC /* NullBuff */,
+			);
+			path = BuffKit;
+			sourceTree = "<group>";
+		};
+		FEC27BE11E3B005700E4A9DC /* CellBuff */ = {
+			isa = PBXGroup;
+			children = (
+				FEC27BE21E3B005700E4A9DC /* CellBuff.h */,
+				FEC27BE31E3B005700E4A9DC /* CellBuff.m */,
+			);
+			path = CellBuff;
+			sourceTree = "<group>";
+		};
+		FEC27BE41E3B005700E4A9DC /* ColorBuff */ = {
+			isa = PBXGroup;
+			children = (
+				FEC27BE51E3B005700E4A9DC /* ColorBuff.h */,
+				FEC27BE61E3B005700E4A9DC /* ColorBuff.m */,
+			);
+			path = ColorBuff;
+			sourceTree = "<group>";
+		};
+		FEC27BE71E3B005700E4A9DC /* CryptoBuff */ = {
+			isa = PBXGroup;
+			children = (
+				FEC27BE81E3B005700E4A9DC /* CryptoBuff.h */,
+				FEC27BE91E3B005700E4A9DC /* CryptoBuff.m */,
+			);
+			path = CryptoBuff;
+			sourceTree = "<group>";
+		};
+		FEC27BEA1E3B005700E4A9DC /* FrameBuff */ = {
+			isa = PBXGroup;
+			children = (
+				FEC27BEB1E3B005700E4A9DC /* FrameBuff.h */,
+				FEC27BEC1E3B005700E4A9DC /* FrameBuff.m */,
+			);
+			path = FrameBuff;
+			sourceTree = "<group>";
+		};
+		FEC27BED1E3B005700E4A9DC /* LBSBuff */ = {
+			isa = PBXGroup;
+			children = (
+				FEC27BEE1E3B005700E4A9DC /* LBSBuff.h */,
+				FEC27BEF1E3B005700E4A9DC /* LBSBuff.m */,
+			);
+			path = LBSBuff;
+			sourceTree = "<group>";
+		};
+		FEC27BF01E3B005700E4A9DC /* NullBuff */ = {
+			isa = PBXGroup;
+			children = (
+				FEC27BF11E3B005700E4A9DC /* NullBuff.h */,
+				FEC27BF21E3B005700E4A9DC /* NullBuff.m */,
+			);
+			path = NullBuff;
+			sourceTree = "<group>";
+		};
+		FEC27BF91E3B01A400E4A9DC /* FontBuff */ = {
+			isa = PBXGroup;
+			children = (
+				FEC27BFA1E3B01BE00E4A9DC /* FontBuff.h */,
+				FEC27BFB1E3B01BE00E4A9DC /* FontBuff.m */,
+			);
+			path = FontBuff;
 			sourceTree = "<group>";
 		};
 		FED2AEA71E2C9D47003AB7DF /* Data */ = {
@@ -472,13 +573,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FEC27BF61E3B005700E4A9DC /* FrameBuff.m in Sources */,
 				FE35F3471E22E4DC009ED4DF /* RTTabBarViewController.m in Sources */,
 				FE35F39C1E22E7D4009ED4DF /* ChainableKit.m in Sources */,
+				FEC27BF31E3B005700E4A9DC /* CellBuff.m in Sources */,
 				FE35F3441E22E215009ED4DF /* AppDelegate.m in Sources */,
+				FEC27BF51E3B005700E4A9DC /* CryptoBuff.m in Sources */,
 				FE35F3401E22E1C6009ED4DF /* RTNavigationController.m in Sources */,
+				FEC27BF81E3B005700E4A9DC /* NullBuff.m in Sources */,
 				FE35F39B1E22E7D4009ED4DF /* MBProgressHUD.m in Sources */,
 				FE35F3161E22DE67009ED4DF /* main.m in Sources */,
 				FEC27BD81E3AFA7C00E4A9DC /* FastMethod.m in Sources */,
+				FEC27BF71E3B005700E4A9DC /* LBSBuff.m in Sources */,
+				FEC27BF41E3B005700E4A9DC /* ColorBuff.m in Sources */,
 				FEC27BDE1E3AFDD100E4A9DC /* LinearViewController.m in Sources */,
 				FE35F3221E22DE67009ED4DF /* Grit.xcdatamodeld in Sources */,
 				FEC27BDB1E3AFDC500E4A9DC /* NonlinearViewController.m in Sources */,
@@ -486,6 +593,7 @@
 				FE35F39D1E22E7D4009ED4DF /* UIView+Chainable.m in Sources */,
 				FE35F3511E22E68B009ED4DF /* SettingsViewController.m in Sources */,
 				FE35F38A1E22E7D4009ED4DF /* FXBlurView.m in Sources */,
+				FEC27BFC1E3B01BE00E4A9DC /* FontBuff.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,6 +9,8 @@
 #import "RTTabBarViewController.h"
 #import "HomeViewController.h"
 #import "SettingsViewController.h"
+#import "NonlinearViewController.h"
+#import "LinearViewController.h"
 @interface RTTabBarViewController ()
 
 @end
@@ -32,6 +34,13 @@ static RTTabBarViewController *sharedSingleton;
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
+    UILabel *titleLabel=[[UILabel alloc]initWithFrame:CGRectMake(0, 0, 60, 30)];
+    [titleLabel setTextAlignment:NSTextAlignmentCenter];
+    [titleLabel setTextColor:[UIColor colorWithHex:0x333333 alpha:1]];
+    [titleLabel setText:@"Habist"];
+    [titleLabel setFont:fast_font_regular(20)];
+    [self.navigationItem setTitleView:titleLabel];
+    
     // Do any additional setup after loading the view.
 }
 
@@ -41,8 +50,15 @@ static RTTabBarViewController *sharedSingleton;
 }
 #pragma mark - Public methods
 -(void)loadVCs{
-    NSArray *itemTitles=@[fast_local(@"item1"),fast_local(@"item2")];
+    NonlinearViewController *nvc=[NonlinearViewController new];
+    UITabBarItem *item1=[[UITabBarItem alloc]initWithTitle:fast_local(@"item1") image:nil selectedImage:nil];
+    nvc.tabBarItem=item1;
     
+    LinearViewController *lvc=[LinearViewController new];
+    UITabBarItem *item2=[[UITabBarItem alloc]initWithTitle:fast_local(@"item2") image:nil selectedImage:nil];
+    lvc.tabBarItem=item2;
+
+    [self setViewControllers:@[nvc,lvc] animated:YES];
 }
 /*
 #pragma mark - Navigation

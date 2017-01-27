@@ -7,8 +7,8 @@
 */
 
 //NavigationBar
-"home" = "Habist"
+"home" = "Habist";
 
 //TabBar
-"item1" = "Nonlinear";
-"item2" = "Linear";
+"item1" = "CheckIn";
+"item2" = "Persist";
