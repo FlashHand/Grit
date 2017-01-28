@@ -12,4 +12,8 @@
 + (NSString *)primaryKey {
     return @"id";
 }
++(HabitModel *)createNew{
+    HabitModel *model=[HabitModel new];
+    return model;
+}
 @end

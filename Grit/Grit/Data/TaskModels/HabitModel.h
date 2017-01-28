@@ -21,4 +21,11 @@ PS NSDate *createDate;
 PA float targetLevel;//目标天数完成百分比
 PA NSInteger targetDuration;//目标持续时间
 PS RLMArray<FullfillLog *><FullfillLog> *logs;
+
+/**
+ create and init a new habit model
+
+ @return HabitModel
+ */
++(HabitModel *)createNew;
 @end

@@ -13,7 +13,12 @@
 @end
 
 @implementation EditViewController
-
+#pragma mark - Life Cycle
+-(instancetype)initWithType:(HabitType )type callBack:(CompletionBlock)callBack{
+    self = [super init];
+    _compBlock=callBack;
+    return self;
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
@@ -22,6 +27,14 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+#pragma mark - Buttons
+#pragma mark - Actions
+-(void)confirm{
+    HabitModel *model=[HabitModel createNew];
+    _compBlock(model);
+    _compBlock=nil;
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 /*
