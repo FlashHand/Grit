@@ -33,6 +33,10 @@
 		FEC27BF71E3B005700E4A9DC /* LBSBuff.m in Sources */ = {isa = PBXBuildFile; fileRef = FEC27BEF1E3B005700E4A9DC /* LBSBuff.m */; };
 		FEC27BF81E3B005700E4A9DC /* NullBuff.m in Sources */ = {isa = PBXBuildFile; fileRef = FEC27BF21E3B005700E4A9DC /* NullBuff.m */; };
 		FEC27BFC1E3B01BE00E4A9DC /* FontBuff.m in Sources */ = {isa = PBXBuildFile; fileRef = FEC27BFB1E3B01BE00E4A9DC /* FontBuff.m */; };
+		FEC27C001E3CCBEC00E4A9DC /* HabitModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FEC27BFF1E3CCBEC00E4A9DC /* HabitModel.m */; };
+		FEC27C031E3CD8D800E4A9DC /* EditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEC27C021E3CD8D800E4A9DC /* EditViewController.m */; };
+		FEC27C081E3CD92200E4A9DC /* HabitListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FEC27C071E3CD92200E4A9DC /* HabitListCell.m */; };
+		FEC27C0E1E3CEE2800E4A9DC /* CALayer+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = FEC27C0D1E3CEE2800E4A9DC /* CALayer+Extension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,6 +107,16 @@
 		FEC27BF21E3B005700E4A9DC /* NullBuff.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NullBuff.m; sourceTree = "<group>"; };
 		FEC27BFA1E3B01BE00E4A9DC /* FontBuff.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FontBuff.h; sourceTree = "<group>"; };
 		FEC27BFB1E3B01BE00E4A9DC /* FontBuff.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FontBuff.m; sourceTree = "<group>"; };
+		FEC27BFE1E3CCBEC00E4A9DC /* HabitModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HabitModel.h; sourceTree = "<group>"; };
+		FEC27BFF1E3CCBEC00E4A9DC /* HabitModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HabitModel.m; sourceTree = "<group>"; };
+		FEC27C011E3CD8D800E4A9DC /* EditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditViewController.h; sourceTree = "<group>"; };
+		FEC27C021E3CD8D800E4A9DC /* EditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditViewController.m; sourceTree = "<group>"; };
+		FEC27C061E3CD92200E4A9DC /* HabitListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HabitListCell.h; sourceTree = "<group>"; };
+		FEC27C071E3CD92200E4A9DC /* HabitListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HabitListCell.m; sourceTree = "<group>"; };
+		FEC27C091E3CE4DF00E4A9DC /* Colors.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Colors.h; sourceTree = "<group>"; };
+		FEC27C0A1E3CEE1700E4A9DC /* Extensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Extensions.h; sourceTree = "<group>"; };
+		FEC27C0C1E3CEE2800E4A9DC /* CALayer+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+Extension.h"; sourceTree = "<group>"; };
+		FEC27C0D1E3CEE2800E4A9DC /* CALayer+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+Extension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -231,12 +245,15 @@
 		FE35F34A1E22E618009ED4DF /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				FEC27C041E3CD8FE00E4A9DC /* Custom */,
 				FE35F34C1E22E63D009ED4DF /* HomeViewController.h */,
 				FE35F34D1E22E63D009ED4DF /* HomeViewController.m */,
 				FEC27BD91E3AFDC500E4A9DC /* NonlinearViewController.h */,
 				FEC27BDA1E3AFDC500E4A9DC /* NonlinearViewController.m */,
 				FEC27BDC1E3AFDD100E4A9DC /* LinearViewController.h */,
 				FEC27BDD1E3AFDD100E4A9DC /* LinearViewController.m */,
+				FEC27C011E3CD8D800E4A9DC /* EditViewController.h */,
+				FEC27C021E3CD8D800E4A9DC /* EditViewController.m */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -293,6 +310,8 @@
 		FE35F39E1E22E7E4009ED4DF /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				FEC27C0B1E3CEE2800E4A9DC /* CALayer */,
+				FEC27C0A1E3CEE1700E4A9DC /* Extensions.h */,
 				FEC27BDF1E3B005700E4A9DC /* BuffKit */,
 			);
 			path = Extensions;
@@ -359,6 +378,7 @@
 		FEC27BE41E3B005700E4A9DC /* ColorBuff */ = {
 			isa = PBXGroup;
 			children = (
+				FEC27C091E3CE4DF00E4A9DC /* Colors.h */,
 				FEC27BE51E3B005700E4A9DC /* ColorBuff.h */,
 				FEC27BE61E3B005700E4A9DC /* ColorBuff.m */,
 			);
@@ -410,17 +430,46 @@
 			path = FontBuff;
 			sourceTree = "<group>";
 		};
-		FEC27BFD1E3B1C9600E4A9DC /* TaskModels */ = {
+		FEC27BFD1E3B1C9600E4A9DC /* HabitModels */ = {
 			isa = PBXGroup;
 			children = (
+				FEC27BFE1E3CCBEC00E4A9DC /* HabitModel.h */,
+				FEC27BFF1E3CCBEC00E4A9DC /* HabitModel.m */,
 			);
+			name = HabitModels;
 			path = TaskModels;
+			sourceTree = "<group>";
+		};
+		FEC27C041E3CD8FE00E4A9DC /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				FEC27C051E3CD8FE00E4A9DC /* Cell */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+		FEC27C051E3CD8FE00E4A9DC /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				FEC27C061E3CD92200E4A9DC /* HabitListCell.h */,
+				FEC27C071E3CD92200E4A9DC /* HabitListCell.m */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		FEC27C0B1E3CEE2800E4A9DC /* CALayer */ = {
+			isa = PBXGroup;
+			children = (
+				FEC27C0C1E3CEE2800E4A9DC /* CALayer+Extension.h */,
+				FEC27C0D1E3CEE2800E4A9DC /* CALayer+Extension.m */,
+			);
+			path = CALayer;
 			sourceTree = "<group>";
 		};
 		FED2AEA71E2C9D47003AB7DF /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				FEC27BFD1E3B1C9600E4A9DC /* TaskModels */,
+				FEC27BFD1E3B1C9600E4A9DC /* HabitModels */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -587,11 +636,14 @@
 				FEC27BF31E3B005700E4A9DC /* CellBuff.m in Sources */,
 				FE35F3441E22E215009ED4DF /* AppDelegate.m in Sources */,
 				FEC27BF51E3B005700E4A9DC /* CryptoBuff.m in Sources */,
+				FEC27C081E3CD92200E4A9DC /* HabitListCell.m in Sources */,
 				FE35F3401E22E1C6009ED4DF /* RTNavigationController.m in Sources */,
 				FEC27BF81E3B005700E4A9DC /* NullBuff.m in Sources */,
 				FE35F39B1E22E7D4009ED4DF /* MBProgressHUD.m in Sources */,
 				FE35F3161E22DE67009ED4DF /* main.m in Sources */,
+				FEC27C0E1E3CEE2800E4A9DC /* CALayer+Extension.m in Sources */,
 				FEC27BD81E3AFA7C00E4A9DC /* FastMethod.m in Sources */,
+				FEC27C031E3CD8D800E4A9DC /* EditViewController.m in Sources */,
 				FEC27BF71E3B005700E4A9DC /* LBSBuff.m in Sources */,
 				FEC27BF41E3B005700E4A9DC /* ColorBuff.m in Sources */,
 				FEC27BDE1E3AFDD100E4A9DC /* LinearViewController.m in Sources */,
@@ -601,6 +653,7 @@
 				FE35F39D1E22E7D4009ED4DF /* UIView+Chainable.m in Sources */,
 				FE35F3511E22E68B009ED4DF /* SettingsViewController.m in Sources */,
 				FE35F38A1E22E7D4009ED4DF /* FXBlurView.m in Sources */,
+				FEC27C001E3CCBEC00E4A9DC /* HabitModel.m in Sources */,
 				FEC27BFC1E3B01BE00E4A9DC /* FontBuff.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

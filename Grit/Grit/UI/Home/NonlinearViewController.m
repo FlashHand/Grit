@@ -13,9 +13,11 @@
 @end
 
 @implementation NonlinearViewController
-
+#pragma mark - Life Cycle
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self.view setBackgroundColor:[UIColor whiteColor]];
+    [self addButton];
     // Do any additional setup after loading the view.
 }
 
@@ -23,7 +25,16 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
+#pragma mark - Buttons
+-(UIButton *)addButton{
+    UIButton *addButton=[[UIButton alloc]initWithFrame:CGRectMake(0, 0, 50, 50)];
+    [addButton setCenter:CGPointMake(self.view.width/2, self.view.height-80)];
+    [addButton setBackgroundColor:kColor_Theme_Green];
+    [addButton.layer ext_setCornerRadius:25];
+    [self.view addSubview:addButton];
+    return addButton;
+}
+#pragma mark - Actions
 /*
 #pragma mark - Navigation
 

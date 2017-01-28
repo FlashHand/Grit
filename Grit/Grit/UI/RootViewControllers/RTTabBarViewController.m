@@ -36,11 +36,12 @@ static RTTabBarViewController *sharedSingleton;
     [super viewDidLoad];
     UILabel *titleLabel=[[UILabel alloc]initWithFrame:CGRectMake(0, 0, 60, 30)];
     [titleLabel setTextAlignment:NSTextAlignmentCenter];
-    [titleLabel setTextColor:[UIColor colorWithHex:0x333333 alpha:1]];
+    [titleLabel setTextColor:kColor_Theme_Green];
     [titleLabel setText:@"Habist"];
-    [titleLabel setFont:fast_font_regular(20)];
+    [titleLabel setFont:fast_font_semibold(25)];
     [self.navigationItem setTitleView:titleLabel];
     
+    [self.tabBar setTintColor:kColor_Theme_Green];
     // Do any additional setup after loading the view.
 }
 
