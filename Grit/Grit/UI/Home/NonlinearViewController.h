@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface NonlinearViewController : UIViewController
+@interface NonlinearViewController : UIViewController<UITableViewDelegate,UITableViewDataSource>
 
 @end

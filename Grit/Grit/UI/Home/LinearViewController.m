@@ -15,6 +15,7 @@
     UIButton *_addButton;
 }
 @end
+static NSString *cellId=@"cellId";
 
 @implementation LinearViewController
 #pragma mark - Life Cycle
@@ -69,7 +70,7 @@
 -(void)goEdit{
     EditViewController *evc=[[EditViewController alloc]initWithType:HabitTypeLinear callBack:^(HabitModel *model) {
         
-    }];
+    }edit:NO];
     [self.navigationController pushViewController:evc animated:YES];
 }
 -(void)updateTable{
@@ -78,6 +79,15 @@
 #pragma mark - Data
 -(void)requestList{
     
+}
+#pragma mark - TableView
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return 10;
+}
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    HabitListCell *cell=[tableView dequeueReusableCellWithIdentifier:cellId];
+    return cell;
+
 }
 /*
 #pragma mark - Navigation

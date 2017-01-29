@@ -15,7 +15,7 @@
     UIButton *_addButton;
 }
 @end
-
+static NSString *cellId=@"cellId";
 @implementation NonlinearViewController
 #pragma mark - Life Cycle
 - (void)viewDidLoad {
@@ -62,6 +62,9 @@
             make.bottom.equalTo(self.view.mas_bottom).with.offset(-44);
             make.right.equalTo(self.view.mas_right).with.offset(0);
         }];
+        [tableView registerClass:[HabitListCell class] forCellReuseIdentifier:cellId];
+        [tableView setDelegate:self];
+        [tableView setDataSource:self];
     }
     return _tableViewNonlinear;
 }
@@ -69,7 +72,7 @@
 -(void)goEdit{
     EditViewController *evc=[[EditViewController alloc]initWithType:HabitTypeNonlinear callBack:^(HabitModel *model) {
         
-    }];
+    }edit:NO];
     [self.navigationController pushViewController:evc animated:YES];
 }
 -(void)updateTable{
@@ -78,6 +81,20 @@
 #pragma mark - Data
 -(void)requestList{
     
+}
+#pragma mark - TableView
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return 10;
+}
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    HabitListCell *cell=[tableView dequeueReusableCellWithIdentifier:cellId];
+    //Mock
+    HabitModel *model=[HabitModel createNew];
+    return cell;
+}
+//Layout
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return 200;
 }
 /*
 #pragma mark - Navigation

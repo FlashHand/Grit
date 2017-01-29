@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LinearViewController : UIViewController
+@interface LinearViewController : UIViewController<UITableViewDelegate,UITableViewDataSource>
 
 @end

@@ -28,4 +28,5 @@ PS RLMArray<FullfillLog *><FullfillLog> *logs;
  @return HabitModel
  */
 +(HabitModel *)createNew;
++(HabitModel *)createMock;
 @end

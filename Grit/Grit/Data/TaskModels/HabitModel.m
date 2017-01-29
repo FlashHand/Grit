@@ -16,4 +16,8 @@
     HabitModel *model=[HabitModel new];
     return model;
 }
++(HabitModel *)createMock{
+    HabitModel *model=[HabitModel createNew];
+    return model;
+}
 @end
