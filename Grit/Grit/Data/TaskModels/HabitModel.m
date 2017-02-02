@@ -7,10 +7,12 @@
 //
 
 #import "HabitModel.h"
+@implementation FullfillLog
+@end
 
 @implementation HabitModel
 + (NSString *)primaryKey {
-    return @"id";
+    return @"m_id";
 }
 +(HabitModel *)createNew{
     HabitModel *model=[HabitModel new];
@@ -18,6 +20,8 @@
 }
 +(HabitModel *)createMock{
     HabitModel *model=[HabitModel createNew];
+    NSDate *otherDay=[NSDate dateWithTimeIntervalSinceNow:-86400*100];
+    [model setM_createDate:otherDay];
     return model;
 }
 @end

@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "UIViewController+HabitList.h"
 @interface LinearViewController : UIViewController<UITableViewDelegate,UITableViewDataSource>
 
 @end

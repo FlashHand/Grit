@@ -11,4 +11,5 @@
 @interface CALayer (Extension)
 -(void)ext_setCornerRadius:(CGFloat )radius;
 -(void)ext_setCornerRadius:(CGFloat )radius borderColor:(UIColor *)color;
++(CALayer *)ext_lineLayerWithOrigin:(CGPoint)lineOrigin length:(CGFloat)lineLength color:(UIColor *) lineColor isPortrait:(BOOL)isPortrait;
 @end
