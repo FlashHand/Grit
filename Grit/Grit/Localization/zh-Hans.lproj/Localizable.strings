@@ -12,3 +12,9 @@
 //Tabbar
 "item1" = "非线性";
 "item2" = "线性";
+
+//HabitListCell
+"Delete" = "删除";
+"Edit" = "编辑";
+"Fullfill" = "实现";
+"Break" = "打断";

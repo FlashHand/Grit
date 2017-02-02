@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "UIViewController+HabitList.h"
 @interface NonlinearViewController : UIViewController<UITableViewDelegate,UITableViewDataSource>
 
 @end

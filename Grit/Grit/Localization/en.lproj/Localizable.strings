@@ -12,3 +12,7 @@
 //TabBar
 "item1" = "CheckIn";
 "item2" = "Persist";
+"Delete" = "Delete";
+"Edit" = "Edit";
+"Fullfill" = "Fullfill";
+"Break" = "Break";

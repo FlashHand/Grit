@@ -23,5 +23,19 @@
 -(UIColor *)reversedColor;
 
 @end
+#pragma mark - Theme Color
+#define kColor_Theme_Green   [UIColor colorWithHex:0x65c294 alpha:1]
+#define kColor_Theme_Green2   [UIColor colorWithHex:0xfeb74d alpha:1]
+
+
+#pragma mark - Text Color
+
+#define kColor_Text_DarkGrey    [UIColor colorWithHex:0x333333 alpha:1]
+#define kColor_Text_LightGrey   [UIColor colorWithHex:0x999999 alpha:1]
+#define kColor_Text_MiddleGrey  [UIColor colorWithHex:0x666666 alpha:1]
+
+#pragma mark - Line Color
+#define kColor_Line_LightGrey   [UIColor colorWithHex:0xcccccc alpha:1]
+
 @interface ColorBuff : NSObject
 @end
