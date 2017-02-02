@@ -37,6 +37,9 @@
 		FEC27C031E3CD8D800E4A9DC /* EditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEC27C021E3CD8D800E4A9DC /* EditViewController.m */; };
 		FEC27C081E3CD92200E4A9DC /* HabitListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FEC27C071E3CD92200E4A9DC /* HabitListCell.m */; };
 		FEC27C0E1E3CEE2800E4A9DC /* CALayer+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = FEC27C0D1E3CEE2800E4A9DC /* CALayer+Extension.m */; };
+		FEC27C121E3E137B00E4A9DC /* RealmStore.m in Sources */ = {isa = PBXBuildFile; fileRef = FEC27C111E3E137B00E4A9DC /* RealmStore.m */; };
+		FEC27C1A1E42EA0900E4A9DC /* DeviceBuff.m in Sources */ = {isa = PBXBuildFile; fileRef = FEC27C191E42EA0900E4A9DC /* DeviceBuff.m */; };
+		FEC27C1D1E42F06E00E4A9DC /* UIViewController+HabitList.m in Sources */ = {isa = PBXBuildFile; fileRef = FEC27C1C1E42F06E00E4A9DC /* UIViewController+HabitList.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -113,10 +116,15 @@
 		FEC27C021E3CD8D800E4A9DC /* EditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditViewController.m; sourceTree = "<group>"; };
 		FEC27C061E3CD92200E4A9DC /* HabitListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HabitListCell.h; sourceTree = "<group>"; };
 		FEC27C071E3CD92200E4A9DC /* HabitListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HabitListCell.m; sourceTree = "<group>"; };
-		FEC27C091E3CE4DF00E4A9DC /* Colors.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Colors.h; sourceTree = "<group>"; };
 		FEC27C0A1E3CEE1700E4A9DC /* Extensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Extensions.h; sourceTree = "<group>"; };
 		FEC27C0C1E3CEE2800E4A9DC /* CALayer+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+Extension.h"; sourceTree = "<group>"; };
 		FEC27C0D1E3CEE2800E4A9DC /* CALayer+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+Extension.m"; sourceTree = "<group>"; };
+		FEC27C101E3E137B00E4A9DC /* RealmStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RealmStore.h; sourceTree = "<group>"; };
+		FEC27C111E3E137B00E4A9DC /* RealmStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RealmStore.m; sourceTree = "<group>"; };
+		FEC27C181E42EA0900E4A9DC /* DeviceBuff.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceBuff.h; sourceTree = "<group>"; };
+		FEC27C191E42EA0900E4A9DC /* DeviceBuff.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceBuff.m; sourceTree = "<group>"; };
+		FEC27C1B1E42F06E00E4A9DC /* UIViewController+HabitList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+HabitList.h"; sourceTree = "<group>"; };
+		FEC27C1C1E42F06E00E4A9DC /* UIViewController+HabitList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+HabitList.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -248,6 +256,8 @@
 				FEC27C041E3CD8FE00E4A9DC /* Custom */,
 				FE35F34C1E22E63D009ED4DF /* HomeViewController.h */,
 				FE35F34D1E22E63D009ED4DF /* HomeViewController.m */,
+				FEC27C1B1E42F06E00E4A9DC /* UIViewController+HabitList.h */,
+				FEC27C1C1E42F06E00E4A9DC /* UIViewController+HabitList.m */,
 				FEC27BD91E3AFDC500E4A9DC /* NonlinearViewController.h */,
 				FEC27BDA1E3AFDC500E4A9DC /* NonlinearViewController.m */,
 				FEC27BDC1E3AFDD100E4A9DC /* LinearViewController.h */,
@@ -355,6 +365,7 @@
 			isa = PBXGroup;
 			children = (
 				FEC27BE01E3B005700E4A9DC /* BuffKit.h */,
+				FEC27C171E42E9F700E4A9DC /* DeviceBuff */,
 				FEC27BE11E3B005700E4A9DC /* CellBuff */,
 				FEC27BE41E3B005700E4A9DC /* ColorBuff */,
 				FEC27BE71E3B005700E4A9DC /* CryptoBuff */,
@@ -378,7 +389,6 @@
 		FEC27BE41E3B005700E4A9DC /* ColorBuff */ = {
 			isa = PBXGroup;
 			children = (
-				FEC27C091E3CE4DF00E4A9DC /* Colors.h */,
 				FEC27BE51E3B005700E4A9DC /* ColorBuff.h */,
 				FEC27BE61E3B005700E4A9DC /* ColorBuff.m */,
 			);
@@ -466,9 +476,28 @@
 			path = CALayer;
 			sourceTree = "<group>";
 		};
+		FEC27C0F1E3E135E00E4A9DC /* RealmUtils */ = {
+			isa = PBXGroup;
+			children = (
+				FEC27C101E3E137B00E4A9DC /* RealmStore.h */,
+				FEC27C111E3E137B00E4A9DC /* RealmStore.m */,
+			);
+			path = RealmUtils;
+			sourceTree = "<group>";
+		};
+		FEC27C171E42E9F700E4A9DC /* DeviceBuff */ = {
+			isa = PBXGroup;
+			children = (
+				FEC27C181E42EA0900E4A9DC /* DeviceBuff.h */,
+				FEC27C191E42EA0900E4A9DC /* DeviceBuff.m */,
+			);
+			path = DeviceBuff;
+			sourceTree = "<group>";
+		};
 		FED2AEA71E2C9D47003AB7DF /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				FEC27C0F1E3E135E00E4A9DC /* RealmUtils */,
 				FEC27BFD1E3B1C9600E4A9DC /* HabitModels */,
 			);
 			path = Data;
@@ -633,6 +662,8 @@
 				FEC27BF61E3B005700E4A9DC /* FrameBuff.m in Sources */,
 				FE35F3471E22E4DC009ED4DF /* RTTabBarViewController.m in Sources */,
 				FE35F39C1E22E7D4009ED4DF /* ChainableKit.m in Sources */,
+				FEC27C1D1E42F06E00E4A9DC /* UIViewController+HabitList.m in Sources */,
+				FEC27C121E3E137B00E4A9DC /* RealmStore.m in Sources */,
 				FEC27BF31E3B005700E4A9DC /* CellBuff.m in Sources */,
 				FE35F3441E22E215009ED4DF /* AppDelegate.m in Sources */,
 				FEC27BF51E3B005700E4A9DC /* CryptoBuff.m in Sources */,
@@ -644,6 +675,7 @@
 				FEC27C0E1E3CEE2800E4A9DC /* CALayer+Extension.m in Sources */,
 				FEC27BD81E3AFA7C00E4A9DC /* FastMethod.m in Sources */,
 				FEC27C031E3CD8D800E4A9DC /* EditViewController.m in Sources */,
+				FEC27C1A1E42EA0900E4A9DC /* DeviceBuff.m in Sources */,
 				FEC27BF71E3B005700E4A9DC /* LBSBuff.m in Sources */,
 				FEC27BF41E3B005700E4A9DC /* ColorBuff.m in Sources */,
 				FEC27BDE1E3AFDD100E4A9DC /* LinearViewController.m in Sources */,

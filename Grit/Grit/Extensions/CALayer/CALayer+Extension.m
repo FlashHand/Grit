@@ -22,4 +22,19 @@
     [self setBorderColor:color.CGColor];
     [self setCornerRadius:radius];
 }
++(CALayer *)ext_lineLayerWithOrigin:(CGPoint)lineOrigin length:(CGFloat)lineLength color:(UIColor *) lineColor isPortrait:(BOOL)isPortrait{
+    CALayer *lineLayer=[CALayer new];
+    [lineLayer setBackgroundColor:lineColor.CGColor];
+    if (!lineColor) {
+        lineColor=kColor_Line_LightGrey ;
+    }
+    if (isPortrait) {
+        [lineLayer setFrame:CGRectMake(lineOrigin.x, lineOrigin.y, 1/kMeasure_Scale, lineLength)];
+    }
+    else
+    {
+        [lineLayer setFrame:CGRectMake(lineOrigin.x, lineOrigin.y, lineLength, 1/kMeasure_Scale)];
+    }
+    return lineLayer;
+}
 @end

@@ -34,7 +34,7 @@ static NSString *cellId=@"cellId";
 -(UIButton *)addButton{
     if (!_addButton) {
         UIButton *addButton=[[UIButton alloc]init];
-        [addButton setBackgroundColor:kColor_Theme_Green];
+        [addButton setBackgroundColor:kColor_Theme_Green2];
         [addButton.layer ext_setCornerRadius:25];
         [self.view addSubview:_addButton = addButton];
         [addButton mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -54,17 +54,18 @@ static NSString *cellId=@"cellId";
 -(UITableView *)tableView{
     if (!_tableViewNonlinear) {
         UITableView *tableView=[[UITableView alloc]initWithFrame:CGRectNull style:UITableViewStylePlain];
-        
+        [tableView setSeparatorStyle:UITableViewCellSeparatorStyleNone];
         [self.view addSubview:_tableViewNonlinear=tableView];
         [tableView mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.equalTo(self.view.mas_top).with.offset(0);
             make.left.equalTo(self.view.mas_left).with.offset(0);
-            make.bottom.equalTo(self.view.mas_bottom).with.offset(-44);
+            make.bottom.equalTo(self.view.mas_bottom).with.offset(-49);
             make.right.equalTo(self.view.mas_right).with.offset(0);
         }];
         [tableView registerClass:[HabitListCell class] forCellReuseIdentifier:cellId];
         [tableView setDelegate:self];
         [tableView setDataSource:self];
+        [tableView setContentInset:UIEdgeInsetsMake(0, 0, 65, 0)];
     }
     return _tableViewNonlinear;
 }
@@ -78,6 +79,7 @@ static NSString *cellId=@"cellId";
 -(void)updateTable{
     
 }
+
 #pragma mark - Data
 -(void)requestList{
     
@@ -89,12 +91,29 @@ static NSString *cellId=@"cellId";
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     HabitListCell *cell=[tableView dequeueReusableCellWithIdentifier:cellId];
     //Mock
-    HabitModel *model=[HabitModel createNew];
+    HabitModel *model=[HabitModel createMock];
+    [cell setHabit:model];
     return cell;
+}
+-(void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    CGPoint convertedPoint=[cell convertPoint:CGPointMake(0, 0) toView:self.view];
+    if ((convertedPoint.y>self.view.height-cell.height)||(convertedPoint.y<0)) {
+        CATransform3D initialTransform=CATransform3DIdentity;
+        initialTransform.m11=0.5;
+        initialTransform.m22=0.5;
+        cell.layer.opacity=0;
+        cell.layer.transform=initialTransform;
+        [UIView animateWithDuration:0.4 delay:0 options:UIViewAnimationOptionTransitionFlipFromTop animations:^{
+            cell.layer.transform=CATransform3DIdentity;
+            cell.layer.opacity=1;
+        } completion:^(BOOL finished) {
+        }  ];
+    }
 }
 //Layout
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return 200;
+    return 250;
 }
 /*
 #pragma mark - Navigation
