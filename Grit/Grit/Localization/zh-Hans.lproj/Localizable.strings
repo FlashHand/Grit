@@ -13,8 +13,18 @@
 "item1" = "非线性";
 "item2" = "线性";
 
-//HabitListCell
+//Habit list cell
 "Delete" = "删除";
 "Edit" = "编辑";
 "Fullfill" = "实现";
 "Break" = "打断";
+"FullfillLevel" = "实现率";
+"BreakRate" = "打断率";
+"TargetLevel" = "目标实现率";
+"TargetRate" = "目标打断率";
+"CurrentLevel" = "当前实现率";
+"CurrentRate" = "当前打断率";
+"Start at" = "开始于";
+"Till now" = "到现在";
+"Fullfilled days" = "实现天数";
+"Break times" = "打断天数";
