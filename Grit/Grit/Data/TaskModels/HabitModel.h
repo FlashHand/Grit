@@ -22,7 +22,7 @@ RLM_ARRAY_TYPE(FullfillLog)
 @interface HabitModel : RLMObject
 
 PA NSInteger m_id;
-PA NSInteger m_type;//1-Nonlinear 2-Linear
+PA NSInteger m_type;//0-Nonlinear 1-Linear
 PS NSString *m_habitName;
 PS NSString *m_habitDesc;
 PS NSDate *m_createDate;//数据库写入时设置

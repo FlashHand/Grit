@@ -26,6 +26,8 @@
 #pragma mark - Theme Color
 #define kColor_Theme_Green   [UIColor colorWithHex:0x65c294 alpha:1]
 #define kColor_Theme_Green2   [UIColor colorWithHex:0xfeb74d alpha:1]
+#define kColor_Theme_Orange   [UIColor colorWithHex:0x65c294 alpha:1]
+
 
 
 #pragma mark - Text Color
@@ -36,6 +38,10 @@
 
 #pragma mark - Line Color
 #define kColor_Line_LightGrey   [UIColor colorWithHex:0xcccccc alpha:1]
+
+#pragma mark - Background Color
+
+#define kColor_Bg_LightGrey   [UIColor colorWithHex:0xdddddd alpha:1]
 
 @interface ColorBuff : NSObject
 @end

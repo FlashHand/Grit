@@ -12,7 +12,21 @@
 //TabBar
 "item1" = "CheckIn";
 "item2" = "Persist";
+
+//Habit list cell
 "Delete" = "Delete";
 "Edit" = "Edit";
 "Fullfill" = "Fullfill";
 "Break" = "Break";
+"FullfillLevel" = "Fullfill-Level";
+"BreakRate" = "Break - Rate";
+"TargetLevel" = "Target Level";
+"TargetRate" = "Target Rate";
+"CurrentLevel" = "Current Level";
+"CurrentRate" = "Current Rate";
+"Start at" = "Start at";
+"Till now" = "Till now";
+"Fullfilled days" = "Fullfilled days";
+"Break times" = "Break times";
+
+
