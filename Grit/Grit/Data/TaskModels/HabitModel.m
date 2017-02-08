@@ -22,6 +22,7 @@
     HabitModel *model=[HabitModel createNew];
     NSDate *otherDay=[NSDate dateWithTimeIntervalSinceNow:-86400*100];
     [model setM_createDate:otherDay];
+    [model setM_type:0];
     return model;
 }
 @end
