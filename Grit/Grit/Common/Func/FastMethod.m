@@ -9,6 +9,8 @@
 #import "FastMethod.h"
 NSString *fast_local(NSString *key){
     NSString *localized=NSLocalizedString(key, nil);
+    NSTimeZone *zone=[NSTimeZone systemTimeZone];
+    NSTimeZone *zone2=[NSTimeZone timeZoneWithAbbreviation:@"GMT"];
     return localized;
 }
 

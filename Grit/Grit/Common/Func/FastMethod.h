@@ -8,3 +8,4 @@
 
 #import <Foundation/Foundation.h>
 NSString *fast_local(NSString *key);
+

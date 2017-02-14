@@ -9,5 +9,5 @@
 #import <Foundation/Foundation.h>
 
 @interface RealmStore : NSObject
-
+#pragma mark - HabitModel
 @end

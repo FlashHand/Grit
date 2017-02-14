@@ -11,6 +11,11 @@
 @end
 
 @implementation HabitModel
+-(instancetype)init{
+    self=[super init];
+    _m_id=[[NSUUID UUID]UUIDString];
+    return self;
+}
 + (NSString *)primaryKey {
     return @"m_id";
 }
@@ -23,6 +28,16 @@
     NSDate *otherDay=[NSDate dateWithTimeIntervalSinceNow:-86400*100];
     [model setM_createDate:otherDay];
     [model setM_type:0];
+    return model;
+}
++(HabitModel *)createCheckIn{
+    HabitModel *model=[HabitModel createNew];
+    model.m_type=0;
+    return model;
+}
++(HabitModel *)createPersist{
+    HabitModel *model=[HabitModel createNew];
+    model.m_type=1;
     return model;
 }
 @end

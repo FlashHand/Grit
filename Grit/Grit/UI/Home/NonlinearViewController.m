@@ -9,6 +9,7 @@
 #import "NonlinearViewController.h"
 #import "EditViewController.h"
 #import "HabitListCell.h"
+#import "CreateViewController.h"
 @interface NonlinearViewController ()
 {
     UITableView *_tableViewNonlinear;
@@ -46,7 +47,7 @@ static NSString *cellId=@"cellId";
         @weakify(self);
         [[_addButton rac_signalForControlEvents:UIControlEventTouchUpInside]subscribeNext:^(id x) {
             @strongify(self);
-            [self goEdit];
+            [self goAdd];
         }];
     }
     return _addButton;
@@ -73,8 +74,14 @@ static NSString *cellId=@"cellId";
 -(void)goEdit{
     EditViewController *evc=[[EditViewController alloc]initWithType:HabitTypeNonlinear callBack:^(HabitModel *model) {
         
-    }edit:NO];
+    }];
     [self.navigationController pushViewController:evc animated:YES];
+}
+-(void)goAdd{
+    CreateViewController *cvc=[[CreateViewController alloc]initWithType:HabitTypeNonlinear callBack:^(HabitModel *model) {
+        
+    }];
+    [self.navigationController pushViewController:cvc animated:YES];
 }
 -(void)updateTable{
     

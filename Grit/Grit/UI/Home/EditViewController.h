@@ -15,5 +15,5 @@ typedef NS_ENUM(NSInteger,HabitType){
 typedef void (^CompletionBlock)(HabitModel *model);
 @interface EditViewController : UIViewController
 PC CompletionBlock compBlock;
-- (instancetype)initWithType:(HabitType )type callBack:(CompletionBlock)callBack edit:(BOOL)isEdit;
+- (instancetype)initWithType:(HabitType )type callBack:(CompletionBlock)callBack;
 @end

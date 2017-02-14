@@ -40,6 +40,7 @@
 		FEC27C121E3E137B00E4A9DC /* RealmStore.m in Sources */ = {isa = PBXBuildFile; fileRef = FEC27C111E3E137B00E4A9DC /* RealmStore.m */; };
 		FEC27C1A1E42EA0900E4A9DC /* DeviceBuff.m in Sources */ = {isa = PBXBuildFile; fileRef = FEC27C191E42EA0900E4A9DC /* DeviceBuff.m */; };
 		FEC27C1D1E42F06E00E4A9DC /* UIViewController+HabitList.m in Sources */ = {isa = PBXBuildFile; fileRef = FEC27C1C1E42F06E00E4A9DC /* UIViewController+HabitList.m */; };
+		FEFAAB961E534C16005848C6 /* CreateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEFAAB951E534C16005848C6 /* CreateViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,7 +85,6 @@
 		FE35F3861E22E7D4009ED4DF /* ChainableKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChainableKit.m; sourceTree = "<group>"; };
 		FE35F3871E22E7D4009ED4DF /* UIView+Chainable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Chainable.h"; sourceTree = "<group>"; };
 		FE35F3881E22E7D4009ED4DF /* UIView+Chainable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Chainable.m"; sourceTree = "<group>"; };
-		FE35F3A61E22E7F0009ED4DF /* Macros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Macros.h; sourceTree = "<group>"; };
 		FE35F3A71E22E825009ED4DF /* grit.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = grit.pch; sourceTree = "<group>"; };
 		FEC27BCB1E3AF88E00E4A9DC /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		FEC27BD21E3AF97100E4A9DC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -125,6 +125,10 @@
 		FEC27C191E42EA0900E4A9DC /* DeviceBuff.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceBuff.m; sourceTree = "<group>"; };
 		FEC27C1B1E42F06E00E4A9DC /* UIViewController+HabitList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+HabitList.h"; sourceTree = "<group>"; };
 		FEC27C1C1E42F06E00E4A9DC /* UIViewController+HabitList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+HabitList.m"; sourceTree = "<group>"; };
+		FEFAAB921E533E1F005848C6 /* Macros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Macros.h; sourceTree = "<group>"; };
+		FEFAAB931E533E29005848C6 /* Date.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Date.h; sourceTree = "<group>"; };
+		FEFAAB941E534C16005848C6 /* CreateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateViewController.h; sourceTree = "<group>"; };
+		FEFAAB951E534C16005848C6 /* CreateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -264,6 +268,8 @@
 				FEC27BDD1E3AFDD100E4A9DC /* LinearViewController.m */,
 				FEC27C011E3CD8D800E4A9DC /* EditViewController.h */,
 				FEC27C021E3CD8D800E4A9DC /* EditViewController.m */,
+				FEFAAB941E534C16005848C6 /* CreateViewController.h */,
+				FEFAAB951E534C16005848C6 /* CreateViewController.m */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -330,18 +336,10 @@
 		FE35F3A41E22E7F0009ED4DF /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				FEFAAB911E533E1F005848C6 /* Macros */,
 				FEC27BD51E3AF9EA00E4A9DC /* Func */,
-				FE35F3A51E22E7F0009ED4DF /* MacroFunc */,
 			);
 			path = Common;
-			sourceTree = "<group>";
-		};
-		FE35F3A51E22E7F0009ED4DF /* MacroFunc */ = {
-			isa = PBXGroup;
-			children = (
-				FE35F3A61E22E7F0009ED4DF /* Macros.h */,
-			);
-			path = MacroFunc;
 			sourceTree = "<group>";
 		};
 		FEC27BCE1E3AF95800E4A9DC /* Localization */ = {
@@ -501,6 +499,15 @@
 				FEC27BFD1E3B1C9600E4A9DC /* HabitModels */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		FEFAAB911E533E1F005848C6 /* Macros */ = {
+			isa = PBXGroup;
+			children = (
+				FEFAAB921E533E1F005848C6 /* Macros.h */,
+				FEFAAB931E533E29005848C6 /* Date.h */,
+			);
+			path = Macros;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -665,6 +672,7 @@
 				FEC27C1D1E42F06E00E4A9DC /* UIViewController+HabitList.m in Sources */,
 				FEC27C121E3E137B00E4A9DC /* RealmStore.m in Sources */,
 				FEC27BF31E3B005700E4A9DC /* CellBuff.m in Sources */,
+				FEFAAB961E534C16005848C6 /* CreateViewController.m in Sources */,
 				FE35F3441E22E215009ED4DF /* AppDelegate.m in Sources */,
 				FEC27BF51E3B005700E4A9DC /* CryptoBuff.m in Sources */,
 				FEC27C081E3CD92200E4A9DC /* HabitListCell.m in Sources */,

@@ -14,14 +14,11 @@ PS NSString *m_fullfillTimeZone;
 PS NSDate *m_breakDate;//打断日期，大于上一次打断日期，且不为同一天
 PS NSString *m_breakTimeZone;
 @end
-//100   50*1 8 *JOKER
-//      1*10 1-8
-//      5*8
 RLM_ARRAY_TYPE(FullfillLog)
 
 @interface HabitModel : RLMObject
 
-PA NSInteger m_id;
+PS NSString *m_id;
 PA NSInteger m_type;//0-Nonlinear 1-Linear
 PS NSString *m_habitName;
 PS NSString *m_habitDesc;
@@ -43,4 +40,19 @@ PS RLMArray<FullfillLog *><FullfillLog> *m_logs;
  @return mock model
  */
 +(HabitModel *)createMock;
+
+/**
+ create and init a CheckIn type habit model m_type=0
+
+ @return model
+ */
++(HabitModel *)createCheckIn;
+
+/**
+ create and init a Persist type habit model m_type=1
+ 
+ @return model
+ */
++(HabitModel *)createPersist;
+
 @end

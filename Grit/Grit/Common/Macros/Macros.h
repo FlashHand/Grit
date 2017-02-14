@@ -8,6 +8,7 @@
 
 #ifndef Macros_h
 #define Macros_h
+#import "Date.h"
 #define PS @property (strong,nonatomic)
 #define PW @property (weak,nonatomic)
 #define PC @property (copy,nonatomic)

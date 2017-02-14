@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "RTNavigationController.h"
+#import "HabitModel.h"
 @interface AppDelegate ()
 
 @end
@@ -20,7 +21,6 @@
     [_window setBackgroundColor:[UIColor whiteColor]];
     [_window makeKeyAndVisible];
     [_window setRootViewController:[RTNavigationController sharedSingleton]];
-    
     return YES;
 }
 
