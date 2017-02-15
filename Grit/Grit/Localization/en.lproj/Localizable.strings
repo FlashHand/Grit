@@ -29,10 +29,11 @@
 "Fullfilled days" = "Fullfilled days";
 "Break times" = "Break times";
 
-//EditViewController
+//EditViewController & CreateViewController
 "Done" = "Done";
 "Title" = "Title";
 "Description" = "Description";
+"Add" = "Add";
 
 
 

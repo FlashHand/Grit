@@ -28,3 +28,9 @@
 "Till now" = "到现在";
 "Fullfilled days" = "实现天数";
 "Break times" = "打断天数";
+
+//EditViewController & CreateViewController
+"Done" = "完成";
+"Title" = "标题";
+"Description" = "描述";
+"Add" = "添加";
