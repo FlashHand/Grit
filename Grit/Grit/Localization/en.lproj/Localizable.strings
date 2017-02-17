@@ -34,6 +34,11 @@
 "Title" = "Title";
 "Description" = "Description";
 "Add" = "Add";
+"Last" = "Last";
+"Next" = "Next";
 
+"TitleDesc" = "习惯的简称";
+"HabitDesc" = "简单描述习惯的注意事项";
+"TargetDesc" = "设置目标数值";
 
 

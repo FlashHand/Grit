@@ -10,8 +10,8 @@
 "home" = "Habist";
 
 //Tabbar
-"item1" = "非线性";
-"item2" = "线性";
+"item1" = "签到";
+"item2" = "持久";
 
 //Habit list cell
 "Delete" = "删除";
@@ -34,3 +34,10 @@
 "Title" = "标题";
 "Description" = "描述";
 "Add" = "添加";
+"Last" = "上一项";
+"Next" = "下一项";
+
+"TitleDesc" = "习惯的简称";
+"HabitDesc" = "简单描述习惯的注意事项";
+"TargetDesc" = "设置目标数值";
+

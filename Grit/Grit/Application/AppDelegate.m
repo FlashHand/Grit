@@ -23,7 +23,14 @@
     [_window setBackgroundColor:[UIColor whiteColor]];
     [_window makeKeyAndVisible];
     [_window setRootViewController:[RTNavigationController sharedSingleton]];
+    [self configureAppearance];
+    [self configureDependencies];
     return YES;
+}
+-(void)configureAppearance{
+    [[UITextField appearance]setTintColor:kColor_Theme_Green];
+    [[UITextView appearance]setTintColor:kColor_Theme_Green];
+
 }
 -(void)configureDependencies
 {
@@ -31,7 +38,8 @@
     [[IQKeyboardManager sharedManager]setShouldShowTextFieldPlaceholder:NO];
     [[IQKeyboardManager sharedManager]setShouldResignOnTouchOutside:YES];
     [[IQKeyboardManager sharedManager]setShouldToolbarUsesTextFieldTintColor:YES];
-    [[IQKeyboardManager sharedManager]setKeyboardDistanceFromTextField:80];
+    [[IQKeyboardManager sharedManager]setKeyboardDistanceFromTextField:60];
+    [[IQKeyboardManager sharedManager]disableToolbarInViewControllerClass:NSClassFromString(@"CreateViewController")];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

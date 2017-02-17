@@ -121,7 +121,7 @@ static NSString *cellId=@"cellId";
 }
 //Layout
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return 250;
+    return 265;
 }
 /*
 #pragma mark - Navigation
